@@ -112,10 +112,16 @@ html {
 
 .friend {
   width: 100%;
+  display: flex;
   padding-bottom: 14px;
 }
 .friend :last-child {
   padding-bottom: 0;
+}
+
+.friend-body {
+  display: flex;
+  flex-direction: column;
 }
 
 .friend-avatar {
@@ -133,11 +139,11 @@ html {
 .friend-mutual {
   color: rgba(0, 0, 0, 0.65);
   font-size: 14px;
-  padding-bottom: 9px;
 }
 
 .friend-add {
   color: #000000;
+  margin-top: auto;
 }
 .friend-add::before {
   content: "";
