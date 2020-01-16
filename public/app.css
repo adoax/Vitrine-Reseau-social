@@ -89,6 +89,15 @@ html {
   }
 }
 
+.profil {
+  display: none;
+}
+@media (min-width: 992px) {
+  .profil {
+    display: block;
+  }
+}
+
 .sidebar-title {
   color: rgba(0, 0, 0, 0.87);
   font-size: 15px;
@@ -151,7 +160,7 @@ html {
   height: 20px;
   display: inline-block;
   vertical-align: middle;
-  margin-top: -2px;
+  transform: translateY(-1px);
   margin-right: 7px;
   background: url("/public/src/svg/add.svg") center center/17px 12px no-repeat;
 }
@@ -204,7 +213,8 @@ html {
 .card-pseudo {
   font-size: 18px;
   font-weight: bold;
-  margin: 5px 0;
+  padding: 0;
+  margin: 0 0 5px 0;
 }
 .card-pseudo a {
   text-decoration: none;

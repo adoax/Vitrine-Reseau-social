@@ -9,7 +9,12 @@
     flex: none;
   }
 }
-
+.profil {
+  display: none;
+  @include lg {
+    display: block;
+  }
+}
 .sidebar-title {
   color: rgba(0, 0, 0, 0.87);
   font-size: 15px;
@@ -72,7 +77,7 @@
     height: 20px;
     display: inline-block;
     vertical-align: middle;
-    margin-top: -2px;
+    transform: translateY(-1px);
     margin-right: 7px;
     background: url("/public/src/svg/add.svg") center center / 17px 12px
       no-repeat;
